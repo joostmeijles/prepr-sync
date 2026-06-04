@@ -1,0 +1,41 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "SubscriptText",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Subscript",
+    "description": null,
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "text",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Tekst",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "title": true,
+            "type": "Text"
+        }
+    ],
+    "folder": null,
+    "icon": "far fa-subscript",
+    "label": "Component",
+    "ref": "7d07b630-0843-457e-9e07-d272336aa3c8",
+    "schema_version": "2026-03-05"
+}

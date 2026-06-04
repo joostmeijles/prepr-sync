@@ -1,0 +1,64 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "CheckedIconList",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Checklist",
+    "description": "Lijst met \u2705 items",
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "name",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Naam",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": "50",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "title": true,
+            "type": "Text"
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "list_items",
+            "appearance": "textarea",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Items",
+            "description": "Items moeten van elkaar worden gescheiden door een nieuwe regel",
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "type": "Text"
+        }
+    ],
+    "folder": null,
+    "icon": "far fa-list-check",
+    "label": "Component",
+    "ref": "9bc4ff18-590c-4cc9-8039-00d1c9a97fce",
+    "schema_version": "2026-03-05"
+}

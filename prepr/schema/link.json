@@ -1,0 +1,188 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "Link",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Link",
+    "description": null,
+    "fields": [
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "type",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Type",
+            "default_value": "INTERNAL",
+            "description": null,
+            "description_appearance": "help_text",
+            "enum": {
+                "body_singular": "LinkType",
+                "label": "Enum",
+                "ref": "b62435c0-4329-4192-8f44-5d5bef24faaa"
+            },
+            "field_state": "read_write",
+            "filterable": true,
+            "required": true,
+            "type": "Enum"
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "title",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Titel",
+            "default_value": "{@PageLink.link_text}",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_only",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": false,
+            "title": true,
+            "type": "Text"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_multiple": false,
+            "api_id": "internal_link",
+            "appearance": "modal",
+            "appearance_conditions": [
+                {
+                    "field": "type",
+                    "in": [
+                        "INTERNAL"
+                    ],
+                    "type": "Enum"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Interne pagina",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "filterable": true,
+            "max": "1",
+            "min": "0",
+            "required": false,
+            "type": "ContentReference",
+            "types": [
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "Homepage",
+                    "label": "Model",
+                    "position": 1,
+                    "ref": "b65d7497-ad9d-4fa9-9843-c740dd40781c"
+                },
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "Page",
+                    "label": "Model",
+                    "position": 2,
+                    "ref": "e4f47406-3a78-41c5-a4aa-592be3713dc2"
+                },
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "NewsOverview",
+                    "label": "Model",
+                    "position": 3,
+                    "ref": "0c9fb807-f352-4d71-86e1-89674d0058bc"
+                }
+            ]
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "external_link",
+            "appearance": "single_line",
+            "appearance_conditions": [
+                {
+                    "field": "type",
+                    "in": [
+                        "EXTERNAL"
+                    ],
+                    "type": "Enum"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Externe pagina",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": false,
+            "type": "Text"
+        },
+        {
+            "accept": [
+                "file"
+            ],
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_align": false,
+            "allow_caption": false,
+            "allow_focal_point": false,
+            "allow_multiple": false,
+            "api_id": "file_link",
+            "appearance_conditions": [
+                {
+                    "field": "type",
+                    "in": [
+                        "FILE"
+                    ],
+                    "type": "Enum"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Link naar bestand",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "focal_point_required": false,
+            "max": "1",
+            "min": "0",
+            "presets_change_required": false,
+            "required": false,
+            "type": "Asset"
+        }
+    ],
+    "folder": null,
+    "icon": "fas fa-compress",
+    "label": "Component",
+    "ref": "57b986f2-5ad9-4f8a-b60e-ed56474b2547",
+    "schema_version": "2026-03-05"
+}

@@ -1,0 +1,65 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "EmbeddedVideo",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Embedded video",
+    "description": "Embedded video\u2019s van YouTube en Vimeo",
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "name",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Naam",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": "50",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "title": true,
+            "type": "Text"
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "url",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "URL",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "regex": "^(https?:\\\/\\\/)?(www\\.)?(youtube\\.com\\\/(watch\\?v=|embed\\\/|shorts\\\/)|youtu\\.be\\\/|vimeo\\.com\\\/(video\\\/)?)([a-zA-Z0-9_\\-]{7,11}|[0-9]{6,11})([\\?&][^\\s]*)?$",
+            "required": true,
+            "type": "Text"
+        }
+    ],
+    "folder": null,
+    "icon": "far fa-video",
+    "label": "Component",
+    "ref": "bc614183-1bbb-4e7c-b5bd-de7e47707f3d",
+    "schema_version": "2026-03-05"
+}
