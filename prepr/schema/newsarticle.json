@@ -55,7 +55,7 @@
             "max": "512",
             "regex": "^[a-zA-Z0-9\\-._~:@!$&'()*+,;=%\\\/]+(?<!\\?)$",
             "remove_trailing_slash": false,
-            "required": true,
+            "required": false,
             "type": "Slug"
         },
         {
