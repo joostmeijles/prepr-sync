@@ -1,106 +1,120 @@
 {
-    "ai_context": null,
-    "ai_examples": null,
-    "ai_goal": null,
-    "ai_usage_rules": null,
+    "ref": "103af281-cb15-475c-91bb-3ce12de3d239",
+    "body": "Nieuwsbericht",
+    "body_singular": "NewsArticle",
+    "label": "Model",
+    "folder": null,
+    "body_plural": "NewsArticles",
+    "description": "Nieuwsbericht pagina",
     "appearance_image": null,
     "appearance_tag": null,
-    "body": "Nieuwsbericht",
-    "body_plural": "NewsArticles",
-    "body_singular": "NewsArticle",
-    "commenting": true,
-    "content_check": true,
-    "description": "Nieuwsbericht pagina",
+    "workflow": true,
+    "scheduling": true,
+    "seo_score": true,
     "engagement_insights": false,
+    "commenting": true,
+    "versioning": true,
+    "content_check": true,
+    "visible": true,
+    "lock_content_item": false,
+    "previewing": true,
+    "slug": "nieuws\/{title}",
+    "single_instance": false,
+    "slug_postfix": true,
+    "review_urls": null,
+    "ai_context": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "ai_examples": null,
     "fields": [
         {
-            "a_b_testing": false,
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
-            "ai_purpose": null,
-            "ai_use_when": null,
-            "api_id": "title",
-            "appearance": "single_line",
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
+            "max": "100",
+            "type": "Text",
+            "required": true,
+            "unique": false,
             "body": "Titel",
+            "api_id": "title",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
-            "max": "100",
-            "no_html": false,
+            "appearance": "single_line",
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
             "openai_options": {
                 "translate": "1"
             },
-            "required": true,
-            "seo_title": true,
-            "title": true,
-            "type": "Text",
-            "unique": false
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
             "ai_purpose": null,
             "ai_use_when": null,
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "title": true,
+            "seo_title": true,
+            "a_b_testing": false,
+            "no_html": false
+        },
+        {
+            "max": "512",
+            "type": "Slug",
+            "regex": "^[a-zA-Z0-9\\-._~:@!$&'()*+,;=%\\\/]+(?<!\\?)$",
+            "required": true,
             "body": "Slug",
             "description": null,
             "description_appearance": "help_text",
+            "field_state": "read_write",
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
             "edit_from_slash": true,
-            "field_state": "read_write",
-            "max": "512",
-            "regex": "^[a-zA-Z0-9\\-._~:@!$&'()*+,;=%\\\/]+(?<!\\?)$",
-            "remove_trailing_slash": false,
-            "required": true,
-            "type": "Slug"
+            "remove_trailing_slash": false
         },
         {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
-            "ai_purpose": null,
-            "ai_use_when": null,
-            "api_id": "news_details",
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
+            "type": "Component",
+            "required": false,
             "body": "Nieuws details",
-            "component": {
-                "api_id": "NewsArticleDetails",
-                "label": "Component",
-                "ref": "e66171fe-3b3c-43f9-8f44-f73b2c1c2ebd"
-            },
+            "api_id": "news_details",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
-            "framed": false,
-            "required": false,
-            "type": "Component"
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
             "ai_purpose": null,
             "ai_use_when": null,
-            "api_id": "hero_image",
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
-            "body": "Hero afbeelding",
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "framed": false,
             "component": {
-                "api_id": "CopyrightedImage",
-                "label": "Component",
-                "ref": "40f026a8-f39c-4052-9263-92e567fb52e6"
-            },
+                "ref": "e66171fe-3b3c-43f9-8f44-f73b2c1c2ebd",
+                "api_id": "NewsArticleDetails",
+                "label": "Component"
+            }
+        },
+        {
+            "type": "Component",
+            "required": false,
+            "body": "Hero afbeelding",
+            "api_id": "hero_image",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
             "framed": true,
-            "required": false,
-            "type": "Component"
+            "component": {
+                "ref": "40f026a8-f39c-4052-9263-92e567fb52e6",
+                "api_id": "CopyrightedImage",
+                "label": "Component"
+            }
         },
         {
             "accept": [
@@ -121,208 +135,193 @@
                 "underline",
                 "unordered-list"
             ],
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
-            "ai_purpose": null,
-            "ai_use_when": null,
-            "allow_align": false,
-            "allow_caption": false,
-            "allow_focal_point": true,
-            "api_id": "content",
+            "type": "ElementBox",
+            "required": true,
             "body": "Content",
+            "api_id": "content",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
-            "focal_point_required": true,
             "openai_options": {
                 "translate": "1"
             },
-            "presets_change_required": false,
-            "required": true,
-            "type": "ElementBox",
-            "types": [
-                {
-                    "api_id": "QuoteBlock",
-                    "label": "Component",
-                    "ref": "f8d4fce2-5f2d-456e-8a78-42da6e34352c"
-                },
-                {
-                    "api_id": "EmbeddedVideo",
-                    "label": "Component",
-                    "ref": "bc614183-1bbb-4e7c-b5bd-de7e47707f3d"
-                },
-                {
-                    "api_id": "CheckedIconList",
-                    "label": "Component",
-                    "ref": "9bc4ff18-590c-4cc9-8039-00d1c9a97fce"
-                },
-                {
-                    "api_id": "SubscriptText",
-                    "label": "Component",
-                    "ref": "7d07b630-0843-457e-9e07-d272336aa3c8"
-                }
-            ]
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
             "ai_purpose": null,
             "ai_use_when": null,
-            "allow_multiple": true,
-            "api_id": "relevant_links",
-            "appearance": "modal",
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
-            "body": "Relevante links",
-            "description": null,
-            "description_appearance": "help_text",
-            "field_state": "read_write",
-            "filterable": true,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "focal_point_required": true,
+            "allow_focal_point": true,
+            "allow_caption": false,
+            "allow_align": false,
+            "presets_change_required": false,
+            "types": {
+                "2": {
+                    "ref": "9bc4ff18-590c-4cc9-8039-00d1c9a97fce",
+                    "label": "Component",
+                    "api_id": "CheckedIconList"
+                },
+                "1": {
+                    "ref": "bc614183-1bbb-4e7c-b5bd-de7e47707f3d",
+                    "label": "Component",
+                    "api_id": "EmbeddedVideo"
+                },
+                "0": {
+                    "ref": "f8d4fce2-5f2d-456e-8a78-42da6e34352c",
+                    "label": "Component",
+                    "api_id": "QuoteBlock"
+                },
+                "3": {
+                    "ref": "7d07b630-0843-457e-9e07-d272336aa3c8",
+                    "label": "Component",
+                    "api_id": "SubscriptText"
+                }
+            }
+        },
+        {
             "max": "3",
+            "type": "ContentReference",
             "min": "0",
             "required": false,
-            "type": "ContentReference",
+            "filterable": true,
+            "body": "Relevante links",
+            "api_id": "relevant_links",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "appearance": "modal",
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "allow_multiple": true,
             "types": [
                 {
-                    "allow_group": false,
-                    "allow_new": true,
+                    "ref": "13236858-7b0b-4e2c-af96-666d6a9240ff",
                     "body_singular": "PageLink",
                     "label": "Model",
-                    "position": 1,
-                    "ref": "13236858-7b0b-4e2c-af96-666d6a9240ff"
+                    "allow_new": true,
+                    "allow_group": false,
+                    "position": 1
                 }
             ]
         },
         {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
-            "ai_purpose": null,
-            "ai_use_when": null,
-            "api_id": "show_cta_banner",
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
+            "type": "Boolean",
+            "required": true,
             "body": "Toon CTA banner",
-            "default_value": false,
+            "api_id": "show_cta_banner",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
-            "required": true,
-            "type": "Boolean"
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
             "ai_purpose": null,
             "ai_use_when": null,
-            "api_id": "cta_banner",
-            "appearance_conditions": [
-                {
-                    "eq": true,
-                    "field": "show_cta_banner",
-                    "type": "Boolean"
-                }
-            ],
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "default_value": false
+        },
+        {
+            "type": "Component",
+            "required": false,
             "body": "CTA Banner",
-            "component": {
-                "api_id": "CTABanner",
-                "label": "Component",
-                "ref": "8997cb66-9adf-4e0c-93c8-67a7cd2a2419"
-            },
+            "api_id": "cta_banner",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
-            "framed": false,
-            "required": false,
-            "type": "Component"
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
-            "ai_purpose": null,
-            "ai_use_when": null,
-            "api_id": "show_faq_section",
-            "appearance_start_new_row": true,
             "appearance_width": 100,
-            "body": "Toon veel gestelde vragen",
-            "default_value": false,
-            "description": null,
-            "description_appearance": "help_text",
-            "field_state": "read_write",
-            "required": true,
-            "type": "Boolean"
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
-            "ai_purpose": null,
-            "ai_use_when": null,
-            "api_id": "faq_section",
+            "appearance_start_new_row": true,
             "appearance_conditions": [
                 {
-                    "eq": true,
-                    "field": "show_faq_section",
-                    "type": "Boolean"
+                    "field": "show_cta_banner",
+                    "type": "Boolean",
+                    "eq": true
                 }
             ],
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
-            "body": "Veelgestelde vragen",
-            "component": {
-                "api_id": "FAQSection",
-                "label": "Component",
-                "ref": "552a22b6-3e8d-4c0c-9df5-7d2f00f1d50e"
-            },
-            "description": null,
-            "description_appearance": "help_text",
-            "field_state": "read_write",
-            "framed": true,
-            "required": false,
-            "type": "Component"
-        },
-        {
-            "ai_avoid_when": null,
-            "ai_examples": null,
-            "ai_expected_content": null,
             "ai_purpose": null,
             "ai_use_when": null,
-            "api_id": "seo",
-            "appearance_start_new_row": true,
-            "appearance_width": 100,
-            "body": "SEO",
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "framed": false,
             "component": {
-                "api_id": "SEO",
-                "label": "Component",
-                "ref": "1278c296-d3e9-455d-a76f-b289c8ef0b27"
-            },
+                "ref": "8997cb66-9adf-4e0c-93c8-67a7cd2a2419",
+                "api_id": "CTABanner",
+                "label": "Component"
+            }
+        },
+        {
+            "type": "Boolean",
+            "required": true,
+            "body": "Toon veel gestelde vragen",
+            "api_id": "show_faq_section",
             "description": null,
             "description_appearance": "help_text",
             "field_state": "read_write",
-            "framed": true,
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "default_value": false
+        },
+        {
+            "type": "Component",
             "required": false,
-            "type": "Component"
+            "body": "Veelgestelde vragen",
+            "api_id": "faq_section",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
+            "appearance_conditions": [
+                {
+                    "field": "show_faq_section",
+                    "type": "Boolean",
+                    "eq": true
+                }
+            ],
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "framed": true,
+            "component": {
+                "ref": "552a22b6-3e8d-4c0c-9df5-7d2f00f1d50e",
+                "api_id": "FAQSection",
+                "label": "Component"
+            }
+        },
+        {
+            "type": "Component",
+            "required": false,
+            "body": "SEO",
+            "api_id": "seo",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "appearance_width": 100,
+            "appearance_start_new_row": true,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "ai_avoid_when": null,
+            "ai_expected_content": null,
+            "ai_examples": null,
+            "framed": true,
+            "component": {
+                "ref": "1278c296-d3e9-455d-a76f-b289c8ef0b27",
+                "api_id": "SEO",
+                "label": "Component"
+            }
         }
-    ],
-    "folder": null,
-    "label": "Model",
-    "lock_content_item": false,
-    "previewing": true,
-    "ref": "103af281-cb15-475c-91bb-3ce12de3d239",
-    "review_urls": null,
-    "scheduling": true,
-    "schema_version": "2026-03-05",
-    "seo_score": true,
-    "single_instance": false,
-    "slug": "nieuws\/{title}",
-    "slug_postfix": true,
-    "versioning": true,
-    "visible": true,
-    "workflow": true
+    ]
 }
