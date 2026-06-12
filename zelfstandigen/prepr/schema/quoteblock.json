@@ -1,0 +1,65 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "QuoteBlock",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Quote blok",
+    "description": "Wordt gebruikt om quotes weer te geven",
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "text",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Quote tekst",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": "300",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "title": true,
+            "type": "Text"
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "name",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Naam",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": "100",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "type": "Text"
+        }
+    ],
+    "folder": null,
+    "icon": "fas fa-quotes",
+    "label": "Component",
+    "ref": "f8d4fce2-5f2d-456e-8a78-42da6e34352c",
+    "schema_version": "2026-03-05"
+}

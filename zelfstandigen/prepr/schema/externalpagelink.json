@@ -1,0 +1,88 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Externe pagina link",
+    "body_plural": "ExternalPageLinks",
+    "body_singular": "ExternalPageLink",
+    "commenting": false,
+    "content_check": false,
+    "description": "Link naar externe pagina",
+    "engagement_insights": false,
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "link_text",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Link tekst",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "seo_title": true,
+            "title": true,
+            "type": "Text",
+            "unique": false
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "url",
+            "appearance": "single_line",
+            "appearance_conditions": [
+                {
+                    "field": "internal_page",
+                    "filled": false,
+                    "type": "Publication"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "URL",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "regex": "^(http:\\\/\\\/|https:\\\/\\\/)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,24}(:[0-9]{1,5})?(\\\/.*)?$",
+            "required": true,
+            "type": "Text",
+            "unique": false
+        }
+    ],
+    "folder": null,
+    "label": "Model",
+    "lock_content_item": false,
+    "previewing": false,
+    "ref": "671542e7-b898-44fa-a4af-2f33060ff2f3",
+    "review_urls": null,
+    "scheduling": false,
+    "schema_version": "2026-03-05",
+    "seo_score": true,
+    "single_instance": false,
+    "slug": null,
+    "slug_postfix": true,
+    "versioning": false,
+    "visible": true,
+    "workflow": false
+}

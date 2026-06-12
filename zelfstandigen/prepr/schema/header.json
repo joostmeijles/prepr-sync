@@ -1,0 +1,120 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Header",
+    "body_plural": "Headers",
+    "body_singular": "Header",
+    "commenting": false,
+    "content_check": true,
+    "description": "Standaard header",
+    "engagement_insights": false,
+    "fields": [
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "appearance": "2",
+            "body": "Columns",
+            "type": "Column"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_multiple": true,
+            "api_id": "top_level_navigation_links",
+            "appearance": "modal",
+            "appearance_start_new_row": false,
+            "appearance_width": 50,
+            "body": "Top level navigatie links",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "filterable": true,
+            "max": "5",
+            "min": "0",
+            "required": false,
+            "type": "ContentReference",
+            "types": [
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "ExternalPageLink",
+                    "label": "Model",
+                    "position": 1,
+                    "ref": "671542e7-b898-44fa-a4af-2f33060ff2f3"
+                },
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "PageLink",
+                    "label": "Model",
+                    "position": 2,
+                    "ref": "13236858-7b0b-4e2c-af96-666d6a9240ff"
+                }
+            ]
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_multiple": true,
+            "api_id": "navigation_links",
+            "appearance": "modal",
+            "appearance_start_new_row": false,
+            "appearance_width": 50,
+            "body": "Navigatie links",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "filterable": true,
+            "max": "5",
+            "min": "0",
+            "required": false,
+            "type": "ContentReference",
+            "types": [
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "ExternalPageLink",
+                    "label": "Model",
+                    "position": 1,
+                    "ref": "671542e7-b898-44fa-a4af-2f33060ff2f3"
+                },
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "PageLink",
+                    "label": "Model",
+                    "position": 2,
+                    "ref": "13236858-7b0b-4e2c-af96-666d6a9240ff"
+                }
+            ]
+        }
+    ],
+    "folder": null,
+    "label": "Model",
+    "lock_content_item": false,
+    "previewing": true,
+    "ref": "783d9f50-ba35-4e03-970a-09446293a799",
+    "review_urls": null,
+    "scheduling": true,
+    "schema_version": "2026-03-05",
+    "seo_score": true,
+    "single_instance": true,
+    "slug": null,
+    "slug_postfix": true,
+    "versioning": false,
+    "visible": true,
+    "workflow": true
+}

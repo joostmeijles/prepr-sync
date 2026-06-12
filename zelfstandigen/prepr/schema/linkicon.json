@@ -1,0 +1,31 @@
+{
+    "body": "Link icoon",
+    "body_singular": "LinkIcon",
+    "enum": [
+        {
+            "display": "Download",
+            "value": "DOWNLOAD"
+        },
+        {
+            "display": "PDF",
+            "value": "PDF"
+        },
+        {
+            "display": "Pagina",
+            "value": "PAGINA"
+        },
+        {
+            "display": "Evenement",
+            "value": "EVENEMENT"
+        },
+        {
+            "display": "Activiteit",
+            "value": "ACTIVITEIT"
+        }
+    ],
+    "enum_as_string": false,
+    "folder": null,
+    "label": "Enum",
+    "ref": "21737375-9097-407d-a38e-bbe398ead9e8",
+    "schema_version": "2026-03-05"
+}
