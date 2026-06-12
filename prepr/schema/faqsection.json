@@ -1,0 +1,75 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "FAQSection",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "FAQ sectie",
+    "description": "Bevat een lijst van vragen met antwoorden",
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "title",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Titel",
+            "default_value": "Veelgestelde vragen",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": 100,
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": false,
+            "title": true,
+            "type": "Text"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_multiple": true,
+            "api_id": "questions",
+            "appearance": "modal",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Vragen",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "filterable": true,
+            "group": false,
+            "max": 5,
+            "min": 0,
+            "required": false,
+            "type": "ContentReference",
+            "types": [
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "Faq",
+                    "label": "Model",
+                    "position": 1,
+                    "ref": "ee2f9a91-5e51-48ae-84a6-7f14aceffd8f"
+                }
+            ]
+        }
+    ],
+    "folder": null,
+    "icon": "fas fa-compress",
+    "label": "Component",
+    "ref": "552a22b6-3e8d-4c0c-9df5-7d2f00f1d50e",
+    "schema_version": "2026-03-05"
+}

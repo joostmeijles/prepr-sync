@@ -1,0 +1,110 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "CopyrightedImage",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Afbeelding met bronvermelding",
+    "description": "Afbeelding met copyright",
+    "fields": [
+        {
+            "accept": [
+                "photo"
+            ],
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_align": false,
+            "allow_caption": false,
+            "allow_focal_point": true,
+            "allow_multiple": false,
+            "api_id": "image",
+            "appearance_start_new_row": false,
+            "appearance_width": 25,
+            "body": "Afbeelding",
+            "description": null,
+            "description_appearance": "tooltip",
+            "field_state": "read_write",
+            "focal_point_required": true,
+            "max": 1,
+            "min": 0,
+            "presets_change_required": false,
+            "required": true,
+            "type": "Asset"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "show_author",
+            "appearance_start_new_row": false,
+            "appearance_width": 25,
+            "body": "Toon bron van afbeelding",
+            "default_value": false,
+            "description": "Als de foto voorzien moet worden van de bron, dan dient deze waarde op **true** te worden gezet.",
+            "description_appearance": "tooltip",
+            "field_state": "read_write",
+            "required": true,
+            "type": "Boolean"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "is_decorative",
+            "appearance_start_new_row": false,
+            "appearance_width": 25,
+            "body": "Is decoratieve afbeelding",
+            "default_value": false,
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "required": true,
+            "type": "Boolean"
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "alt_text",
+            "appearance": "single_line",
+            "appearance_conditions": [
+                {
+                    "eq": true,
+                    "field": "is_decorative",
+                    "type": "Boolean"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Alternatieve tekst",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": 125,
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "title": true,
+            "type": "Text"
+        }
+    ],
+    "folder": null,
+    "icon": "far fa-camera",
+    "label": "Component",
+    "ref": "40f026a8-f39c-4052-9263-92e567fb52e6",
+    "schema_version": "2026-03-05"
+}

@@ -1,0 +1,333 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "Nieuwsbericht",
+    "body_plural": "NewsArticles",
+    "body_singular": "NewsArticle",
+    "commenting": true,
+    "content_check": true,
+    "description": "Nieuwsbericht pagina",
+    "engagement_insights": false,
+    "fields": [
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "title",
+            "appearance": "single_line",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Titel",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": 100,
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "seo_title": true,
+            "title": true,
+            "type": "Text",
+            "unique": false
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Slug",
+            "description": null,
+            "description_appearance": "help_text",
+            "edit_from_slash": true,
+            "field_state": "read_write",
+            "max": 512,
+            "regex": "^[a-zA-Z0-9\\-._~:@!$&'()*+,;=%\\\/]+(?<!\\?)$",
+            "remove_trailing_slash": false,
+            "required": true,
+            "type": "Slug"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "news_details",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Nieuws details",
+            "component": {
+                "api_id": "NewsHeader",
+                "label": "Component",
+                "ref": "e66171fe-3b3c-43f9-8f44-f73b2c1c2ebd"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": false,
+            "required": false,
+            "type": "Component"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "hero_image",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Hero afbeelding",
+            "component": {
+                "api_id": "CopyrightedImage",
+                "label": "Component",
+                "ref": "40f026a8-f39c-4052-9263-92e567fb52e6"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": true,
+            "required": false,
+            "type": "Component"
+        },
+        {
+            "accept": [
+                "Asset",
+                "H2",
+                "H3",
+                "H4",
+                "Heading",
+                "Html",
+                "Paragraph",
+                "TextArea",
+                "bold",
+                "italic",
+                "link",
+                "ordered-list",
+                "table",
+                "underline",
+                "unordered-list"
+            ],
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_align": false,
+            "allow_caption": false,
+            "allow_focal_point": false,
+            "api_id": "content",
+            "body": "Content",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "focal_point_required": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "presets_change_required": false,
+            "required": true,
+            "type": "ElementBox",
+            "types": [
+                {
+                    "api_id": "CheckList",
+                    "label": "Component",
+                    "ref": "9bc4ff18-590c-4cc9-8039-00d1c9a97fce"
+                },
+                {
+                    "api_id": "EmbeddedVideo",
+                    "label": "Component",
+                    "ref": "bc614183-1bbb-4e7c-b5bd-de7e47707f3d"
+                },
+                {
+                    "api_id": "QuoteBlock",
+                    "label": "Component",
+                    "ref": "f8d4fce2-5f2d-456e-8a78-42da6e34352c"
+                },
+                {
+                    "api_id": "SubscriptText",
+                    "label": "Component",
+                    "ref": "7d07b630-0843-457e-9e07-d272336aa3c8"
+                },
+                {
+                    "api_id": "CopyrightedImage",
+                    "label": "Component",
+                    "ref": "40f026a8-f39c-4052-9263-92e567fb52e6"
+                }
+            ]
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "allow_multiple": true,
+            "api_id": "relevant_links",
+            "appearance": "modal",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Relevante links",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "filterable": true,
+            "group": false,
+            "max": 3,
+            "min": 0,
+            "required": false,
+            "type": "ContentReference",
+            "types": [
+                {
+                    "allow_group": false,
+                    "allow_new": true,
+                    "body_singular": "PageLink",
+                    "label": "Model",
+                    "position": 1,
+                    "ref": "13236858-7b0b-4e2c-af96-666d6a9240ff"
+                }
+            ]
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "show_cta_banner",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Toon CTA banner",
+            "default_value": false,
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "required": true,
+            "type": "Boolean"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "cta_banner",
+            "appearance_conditions": [
+                {
+                    "eq": true,
+                    "field": "show_cta_banner",
+                    "type": "Boolean"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "CTA Banner",
+            "component": {
+                "api_id": "CTABanner",
+                "label": "Component",
+                "ref": "8997cb66-9adf-4e0c-93c8-67a7cd2a2419"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": false,
+            "required": false,
+            "type": "Component"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "show_faq_section",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Toon veel gestelde vragen",
+            "default_value": false,
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "required": true,
+            "type": "Boolean"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "faq_section",
+            "appearance_conditions": [
+                {
+                    "eq": true,
+                    "field": "show_faq_section",
+                    "type": "Boolean"
+                }
+            ],
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "Veelgestelde vragen",
+            "component": {
+                "api_id": "FAQSection",
+                "label": "Component",
+                "ref": "552a22b6-3e8d-4c0c-9df5-7d2f00f1d50e"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": true,
+            "required": false,
+            "type": "Component"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "seo",
+            "appearance_start_new_row": true,
+            "appearance_width": 100,
+            "body": "SEO",
+            "component": {
+                "api_id": "SEO",
+                "label": "Component",
+                "ref": "1278c296-d3e9-455d-a76f-b289c8ef0b27"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": true,
+            "required": false,
+            "type": "Component"
+        }
+    ],
+    "folder": null,
+    "label": "Model",
+    "lock_content_item": false,
+    "previewing": true,
+    "ref": "103af281-cb15-475c-91bb-3ce12de3d239",
+    "review_urls": null,
+    "scheduling": true,
+    "schema_version": "2026-03-05",
+    "seo_score": true,
+    "single_instance": false,
+    "slug": "nieuws\/{title}",
+    "slug_postfix": true,
+    "versioning": true,
+    "visible": true,
+    "workflow": true
+}

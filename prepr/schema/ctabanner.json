@@ -1,0 +1,103 @@
+{
+    "ai_context": null,
+    "ai_examples": null,
+    "ai_goal": null,
+    "ai_usage_rules": null,
+    "api_id": "CTABanner",
+    "appearance_image": null,
+    "appearance_tag": null,
+    "body": "CTA Banner",
+    "description": "Call-to-action banner",
+    "fields": [
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "photo",
+            "appearance_start_new_row": false,
+            "appearance_width": 100,
+            "body": "Foto",
+            "component": {
+                "api_id": "CopyrightedImage",
+                "label": "Component",
+                "ref": "40f026a8-f39c-4052-9263-92e567fb52e6"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": true,
+            "required": false,
+            "type": "Component"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "is_become_member_cta",
+            "appearance_start_new_row": false,
+            "appearance_width": 33,
+            "body": "Is lid worden CTA",
+            "default_value": false,
+            "description": "Als deze waarde op true word gezet, dan wordt de banner in de \"lid worden\" kleur getoond",
+            "description_appearance": "tooltip",
+            "field_state": "read_write",
+            "required": false,
+            "type": "Boolean"
+        },
+        {
+            "a_b_testing": false,
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "banner_text",
+            "appearance": "single_line",
+            "appearance_start_new_row": false,
+            "appearance_width": 67,
+            "body": "Banner tekst",
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "max": 80,
+            "no_html": false,
+            "openai_options": {
+                "translate": "1"
+            },
+            "required": true,
+            "title": true,
+            "type": "Text"
+        },
+        {
+            "ai_avoid_when": null,
+            "ai_examples": null,
+            "ai_expected_content": null,
+            "ai_purpose": null,
+            "ai_use_when": null,
+            "api_id": "link",
+            "appearance_start_new_row": false,
+            "appearance_width": 100,
+            "body": "Link",
+            "component": {
+                "api_id": "Link",
+                "label": "Component",
+                "ref": "57b986f2-5ad9-4f8a-b60e-ed56474b2547"
+            },
+            "description": null,
+            "description_appearance": "help_text",
+            "field_state": "read_write",
+            "framed": true,
+            "required": false,
+            "type": "Component"
+        }
+    ],
+    "folder": null,
+    "icon": "fas fa-bullhorn",
+    "label": "Component",
+    "ref": "8997cb66-9adf-4e0c-93c8-67a7cd2a2419",
+    "schema_version": "2026-03-05"
+}
